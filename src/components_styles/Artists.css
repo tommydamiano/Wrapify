@@ -1,0 +1,248 @@
+.artist-back-button-container {
+    display: flex;
+}
+
+.artist-back-button-container button {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 20px;
+	background-color: #FFF;
+	color: black;
+	padding: 8px 35px;
+    transition: 300ms ease-in-out;
+    border: 1px solid #FFF;
+    font-size: 1rem;
+    margin-left: 2vw;
+    margin-top: 1.8vh;
+}
+
+.artist-back-button-container button:active {
+	transform: scale(0.95);
+}
+
+.artist-back-button-container button:focus {
+	outline: none;
+}
+
+.artist-back-button-container button:hover {
+    background-color: #1db954;
+    border: 1px solid #1db954;
+    color: #FFF;
+    box-shadow: 0px 0px 2px #fff;
+}
+
+.artist-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.artist-interesting {
+    color: #20ca5c;
+}
+
+.artist-header-container h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.artist-header-container div {
+    font-size: 1.8rem;
+    margin: 5px 0 40px 0;
+}
+
+.artist-container {
+    display: flex;
+    justify-content: center;
+}
+
+.artist-short-term-header, .artist-medium-term-header, .artist-long-term-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 20px 0 15px 0;
+}
+
+.artist-short-term-header h1, .artist-medium-term-header h1, .artist-long-term-header h1 {
+    border-bottom: 3px solid white;    
+    margin: 0;
+}
+
+.main-artist-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10vw 0 10vw;
+    max-width: 200px;
+}
+
+.main-artist-div p {
+    font-size: 1.4rem;
+    margin: 17px 0 45px 0;
+}
+
+.main-artist-div img {
+    height: 200px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 17px #fff;
+    transition: transform 0.5s ease-in-out;
+    margin: 20px 0 0 0;
+}
+
+.main-artist-div img:hover {
+    transform: scale(1.08);
+    transition: transform 0.5s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+@media (max-width: 1250px) and (min-height: 800px) {
+    .artist-back-button-container button {
+        margin-bottom: 20px;
+    }
+
+    .artist-header-container h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .artist-header-container div {
+        font-size: 1.6rem;
+        margin: 5px 0 40px 0;
+    }
+
+    .artist-short-term-header, .artist-medium-term-header, .artist-long-term-header {
+        font-size: 1.1rem;
+    }
+
+    .main-artist-div p {
+        font-size: 1.3rem;
+    }
+    
+    .main-artist-div img {
+        height: 170px;
+    }
+}
+
+@media (max-width: 850px) {
+    .artist-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) and (min-height: 800px) {
+    .artist-header-container h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .artist-header-container div {
+        font-size: 1.6rem;
+        margin: 5px 0 15px 0;
+    }
+
+    .artist-short-term-header, .artist-medium-term-header, .artist-long-term-header {
+        font-size: 1.4rem;
+    }
+
+    .artist-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-artist-div {
+        text-align: center;
+    }
+
+    .main-artist-div p {
+        font-size: 1.8rem;
+    }
+    
+    .main-artist-div img {
+        height: 270px;
+    }
+}
+
+@media (max-width: 800px) {
+    .artist-header-container {
+        text-align: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .artist-back-button-container button {
+        padding: 2px 15px;
+        margin-bottom: 15px;
+        font-size: 0.7rem;
+    }
+
+    .artist-header-container h1 {
+        font-size: 2rem;
+    }
+
+    .artist-header-container div {
+        font-size: 1.1rem;
+        margin: 2.5px 0 0 0;
+    }
+
+    .artist-short-term-header, .artist-medium-term-header, .artist-long-term-header {
+        font-size: 0.9rem;
+    }
+
+    .main-artist-div p {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .main-artist-div img {
+        height: 145px;
+    }
+}
+
+@media (max-height: 900px) and (min-width: 600px) {
+    .artist-back-button-container button {
+        padding: 3px 26px;
+        font-size: 0.9rem;
+    }
+
+    .artist-header-container h1 {
+        font-size: 2.8rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .artist-header-container div {
+        font-size: 1.5rem;
+        margin: 5px 0 15px 0;
+    }
+
+    .artist-short-term-header, .artist-medium-term-header, .artist-long-term-header {
+        font-size: 0.95rem;
+    }
+
+    .main-artist-div p {
+        font-size: 1.01rem;
+    }
+    
+    .main-artist-div img {
+        height: 140px;
+    }  
+}

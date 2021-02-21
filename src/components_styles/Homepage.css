@@ -1,0 +1,246 @@
+.homepage-header {
+  min-height: 83vh;
+}
+
+.main-home-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12vh;
+  height: 16vh;
+}
+
+.main-home-div h1 {
+  font-size: 8rem;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  margin-right: 1.2vw;
+}
+
+.main-home-div img {
+  width: 110px;
+  height: 110px;
+}
+
+.secondary-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4vh;
+}
+
+.secondary-header-container p {
+  font-size: 1.6rem;
+  margin-top: 0.6vh;
+}
+
+.green-spotify-callout {
+  color:#2bcc63;
+}
+
+.spotify-auth-container {
+  display: flex;
+  justify-content: center;
+}
+
+.rsaSpotifyBtn {
+  transition-duration: 300ms;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-style: bold;
+  background-color: #1db954;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  width: 18vw;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.31rem;
+}
+
+.rsaSpotifyBtn:hover, .rsaSpotifyBtn:focus {
+  transition-duration: 500ms;
+  box-shadow: 0 0.05rem 0.45rem 0 #ffffff;
+  outline: none;
+}
+
+.rsaSpotifyLogo {
+  /* Convert spotify logo to white */
+  padding: 0.25rem 0.5rem;
+  height: 1.5rem;
+  fill: #fff;
+  width: 2em;
+}
+
+.footer-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 2.5vh;
+}
+
+.footer-home p {
+  margin: 0;
+}
+
+.footer-home a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 10px;
+  position: relative;
+}
+
+.footer-home a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.footer-home a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.footer-home img {
+  height: 32px;
+  width: 32px;
+}
+
+/* Large mac */
+
+@media (max-width: 1500px) and (min-height: 800px) {
+  .rsaSpotifyBtn {
+    font-size: 1.1rem;
+    width: 270px;
+  }
+}
+
+@media (max-width: 800px) and (min-height: 800px) {
+  .rsaSpotifyBtn {
+    width: 300px;
+  }
+}
+
+@media (max-width: 760px) and (min-height: 800px) {
+  .main-home-div h1 {
+    font-size: 6rem;
+  }
+
+  .main-home-div img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .secondary-header-container p {
+    font-size: 1.4rem;
+    margin-top: 0.5vh;
+  }
+
+  .rsaSpotifyBtn {
+    width: 300px;
+  }
+
+  .rsaSpotifyLogo {
+    visibility: hidden;
+    padding: 0;
+    height: 0;
+    width: 0;
+  }
+
+  .footer-home {
+    font-size: 1.1rem;
+  }
+}
+
+/* Phone */
+
+@media (max-width: 420px) {
+  .main-home-div h1 {
+    font-size: 4rem;
+  }
+
+  .main-home-div img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .secondary-header-container p {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+
+  .rsaSpotifyBtn {
+    font-size: 0.9rem;
+    width: 220px;
+    height: 60px;
+  }
+
+  .rsaSpotifyLogo {
+    visibility: hidden;
+    padding: 0;
+    height: 0;
+    width: 0;
+  }
+
+  .footer-home {
+    font-size: 1rem;
+  }
+}
+
+/* Small mac */
+
+@media (max-height: 850px) and (min-width: 600px) {
+  .main-home-div h1 {
+    font-size: 5.3rem;
+  }
+
+  .main-home-div img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .secondary-header-container p {
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+
+  .rsaSpotifyBtn {
+    font-size: 1.0rem;
+    width: 270px;
+    height: 60px;
+  }
+
+  .footer-home {
+    font-size: 1rem;
+  }
+}
+
+@media (max-height: 650px) and (min-width: 600px) {
+  .secondary-header-container p {
+    font-size: 1.3rem;
+    margin-top: 11px;
+  }
+
+  .footer-home {
+    font-size: 1rem;
+  }
+} 
+
+
+
+

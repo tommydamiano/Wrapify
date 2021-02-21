@@ -1,0 +1,502 @@
+.logout-button-container {
+    display: flex;
+}
+
+.logout-button-container button {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 20px;
+	background-color: #FFF;
+	color: black;
+	padding: 8px 35px;
+    transition: 300ms ease-in-out;
+    border: 1px solid #FFF;
+    font-size: 1rem;
+    margin-left: 2vw;
+    margin-top: 1.8vh;
+}
+
+.logout-button-container button:active {
+	transform: scale(0.95);
+}
+
+.logout-button-container button:focus {
+	outline: none;
+}
+
+.logout-button-container button:hover {
+    background-color: #1db954;
+    border: 1px solid #1db954;
+    color: #FFF;
+    box-shadow: 0px 0px 2px #fff;
+}
+
+.main-select-div {
+    min-height: 83vh;
+}
+
+.welcome-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9rem;
+}
+
+.welcome-div h1 {
+    margin-right: 3vw;
+}
+
+.welcome-div img {
+    height: 220px;
+    border-radius: 50px;
+}
+
+
+.choice-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 4vh 0;
+}
+
+.choice-song, .choice-artist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1db954;
+    color: #FFFF;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	width: 550px;
+    height: 450px;
+    margin: 0 6vw;
+    transition: transform 0.4s ease-in-out;
+}
+
+.choice-song:hover, .choice-artist:hover {
+    transform: scale(1.08);
+    transition: transform 0.4s ease-in-out;
+}
+
+.choice-song img, .choice-artist img {
+    height: 225px;
+    margin: 40px 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+.choice-song:hover ~ .choice-artist {
+    filter: blur(4px);
+    opacity: 0.6;
+    transition: transform 0.4s ease-in-out;
+}
+
+.choice-song-blur-on {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1db954;
+    color: #FFFF;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	width: 550px;
+    height: 450px;
+    margin: 0 6vw;
+    transition: transform 0.4s ease-in-out;
+    filter: blur(4px);
+    opacity: 0.6;
+}
+
+.choice-song-blur-on img {
+    height: 225px;
+    margin: 40px 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+.footer-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 2.5vh;
+}
+  
+  .footer-select p {
+    margin: 0;
+}
+  
+  .footer-select a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 10px;
+    position: relative;
+}
+  
+  .footer-select a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+  
+  .footer-select a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+  
+  .footer-select img {
+    height: 32px;
+    width: 32px;
+}
+
+/* Small Mac */
+
+@media (max-height: 660px) {
+    .footer-select {
+       font-size: 0rem;
+       visibility: hidden;
+    }
+}
+
+@media (max-height: 850px) and (min-width: 600px) {
+    .welcome-div {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .welcome-div img {
+        height: 170px;
+    }
+
+    .choice-song, .choice-artist {
+        width: 450px;
+        height: 350px;
+        font-size: 2.3em;
+    }
+
+    .choice-song-blur-on {
+        width: 450px;
+        height: 350px;
+        font-size: 2.3em;
+    }
+
+    .choice-song img, .choice-artist img {
+        height: 180px;
+    }
+
+    .choice-song-blur-on img {
+        height: 180px;
+    }
+
+    .logout-button-container button {
+        padding: 3px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-height: 800px) and (min-width: 600px) {
+    .welcome-div {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .welcome-div img {
+        height: 160px;
+    }
+
+    .choice-song, .choice-artist {
+        width: 380px;
+        height: 300px;
+        font-size: 1.8em;
+    }
+
+    .choice-song div, .choice-artist div {
+        margin-top: 7px;
+    }
+
+    .choice-song-blur-on div, .choice-artist-blur-on div {
+        margin-top: 7px;
+    }
+
+    .choice-song-blur-on {
+        width: 380px;
+        height: 300px;
+        font-size: 1.8em;
+    }
+
+    .choice-song img, .choice-artist img {
+        height: 160px;
+    }
+
+    .choice-song-blur-on img {
+        height: 160px;
+    }
+
+    .logout-button-container button {
+        padding: 3px 20px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Large Mac */
+  
+@media (max-width: 1060px) and (min-height: 800px) {
+    .welcome-div {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .welcome-div img {
+        height: 200px;
+    }
+
+    .choice-song, .choice-artist {
+        width: 500px;
+        height: 400px;
+        font-size: 2.5rem;
+    }
+
+    .choice-song-blur-on {
+        width: 500px;
+        height: 400px;
+        font-size: 2.5rem;
+    }
+
+    .choice-song img, .choice-artist img {
+        height: 200px;
+    }
+
+    .choice-song-blur-on img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 900px) and (min-height: 800px) {
+    .welcome-div {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .welcome-div img {
+        height: 170px;
+    }
+
+    .choice-song, .choice-artist {
+        width: 400px;
+        height: 350px;
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+
+    .choice-song-blur-on {
+        width: 400px;
+        height: 350px;
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+
+    .choice-song img, .choice-artist img {
+        height: 200px;
+    }
+
+    .choice-song-blur-on img {
+        height: 200px;
+    }
+
+    .logout-button-container button {
+        padding: 5px 30px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 800px) and (min-height: 800px) {
+    .welcome-div {
+        font-size: 1.3rem;
+        margin-bottom: -40px;
+        text-align: center;
+    }
+
+    .welcome-div img {
+        height: 130px;
+        border-radius: 20px;
+    }
+
+    .choice-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .choice-song, .choice-artist {
+        width: 400px;
+        height: 300px;
+        font-size: 2.2rem;
+        margin-top: 60px;
+    }
+
+    .choice-song-blur-on {
+        width: 400px;
+        height: 300px;
+        font-size: 2.2rem;
+        margin-top: 60px;
+    }
+
+    .choice-song img, .choice-artist img {
+        height: 160px;
+    }
+
+    .choice-song-blur-on img {
+        height: 160px;
+    }
+    
+    .logout-button-container button {
+        padding: 4px 25px;
+        font-size: 0.9rem;
+    }
+
+    .footer-select {
+        margin-bottom: 1.5vh;
+    }
+}
+
+@media (max-width: 700px) and (min-height: 800px) {
+    .welcome-div {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .welcome-div img {
+        height: 100px;
+    }
+
+    .choice-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 1vh 0;
+    }
+
+    .choice-song, .choice-artist {
+        width: 400px;
+        height: 300px;
+        font-size: 2rem;
+        margin-top: 60px;
+    }
+
+    .choice-song-blur-on {
+        width: 400px;
+        height: 300px;
+        font-size: 2rem;
+        margin-top: 60px;
+    }
+
+    .choice-song img, .choice-artist img {
+        height: 160px;
+    }
+
+    .choice-song-blur-on img {
+        height: 160px;
+    }
+    
+    .logout-button-container button {
+        padding: 4px 25px;
+    }
+}
+
+/* Phone */
+
+@media (max-width: 420px) {
+    .welcome-div {
+        font-size: 0.8rem;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: -50px;
+    }
+
+    .choice-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;;
+    }
+
+    .choice-song {
+        margin-bottom: -20px;
+    }
+
+    .welcome-div h1 {
+        margin-right: 0;
+    }
+
+    .welcome-div img {
+        height: 0px;
+    }
+
+    .choice-song div, .choice-artist div {
+        margin-top: 30px;
+        margin-bottom: -20px;
+    }
+
+    .choice-song-blur-on div {
+        margin-top: 30px;
+        margin-bottom: -20px;
+    }
+
+    .choice-song, .choice-artist {
+        width: 250px;
+        height: 175px;
+        font-size: 1.5rem;
+        margin-top: 70px;
+        font-weight: bold;
+    }
+
+    .choice-song-blur-on {
+        width: 250px;
+        height: 175px;
+        font-size: 1.5rem;
+        margin-top: 70px;
+    }
+
+    .choice-song img, .choice-artist img {
+        height: 100px;
+    }
+
+    .choice-song-blur-on img {
+        height: 100px;
+    }
+    
+    .logout-button-container button {
+        padding: 2px 15px;
+        margin-bottom: 2.5px;
+        font-size: 0.7rem;
+    }
+
+    .footer-select {
+       font-size: 1rem;
+    }
+}
+

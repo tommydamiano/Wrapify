@@ -23,7 +23,7 @@ function Homepage() {
                 btnClassName= 'rsaSpotifyBtn'
                 onAccessToken= {() => window.location.replace('/select')}
                 redirectUri={window.location.href}
-                clientID='62a3bd9320eb4455b95a18d40b2e1c46'
+                clientID=''
                 scopes={['user-top-read']} />
             </div> 
           </FadeIn>
